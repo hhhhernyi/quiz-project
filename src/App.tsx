@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+
+  const [musicOn, setMusicOn] = useState<boolean>(true)
+
+  function handleClickMusic() {
+    setMusicOn(!musicOn)
+    console.log(musicOn)
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="flex flex-col">
+      <div className="flex flex-row-reverse m-5">
+        <button onClick={handleClickMusic} className="border-black border-2 rounded-2xl p-2 bg-white">Music</button>
       </div>
-      <h1>Quiz Game</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <img src="public\Logo.png"/>
+      <div className="flex sm:flex-col lg:flex-row justify-center items-center">
+        <button className="border-black border-2 rounded-3xl p-4 bg-white w-[300px] m-3">Start Game</button>
+        <button className="border-black border-2 rounded-3xl p-4 bg-white w-[300px] m-3">Instructions</button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+    </div>
   )
 }
-
-export default App

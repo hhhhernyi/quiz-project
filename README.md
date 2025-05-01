@@ -1,6 +1,6 @@
 # You want to be millionaire or not?
 
-This is a redevelopment of my first project with General Assembly, where i developed a browser based game using HTML, CSS, and Javascript
+This is a redevelopment of my first project with General Assembly, where i developed a browser based game using HTML, CSS, and Javascript.
 I decided to redo it using React and Typescript, to learn more about typescript development
 
 ## Main things to work on
@@ -19,4 +19,5 @@ I decided to redo it using React and Typescript, to learn more about typescript 
 - styling (Tailwindcss or other UI Librarires)
 - Testing? try using Jest?
 - How to use React Native?
+- using Figma for mockups?
 
