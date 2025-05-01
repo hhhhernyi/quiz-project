@@ -14,7 +14,10 @@ export default function App() {
       <div className="flex flex-row-reverse m-5">
         <button onClick={handleClickMusic} className="border-black border-2 rounded-2xl p-2 bg-white">Music</button>
       </div>
-      <img src="public\Logo.png"/>
+      <div className="flex items-center justify-center">
+        <img src="public\Logo.png" className="max-w-[500px]"/>
+      </div>
+      
       <div className="flex sm:flex-col lg:flex-row justify-center items-center">
         <button className="border-black border-2 rounded-3xl p-4 bg-white w-[300px] m-3">Start Game</button>
         <button className="border-black border-2 rounded-3xl p-4 bg-white w-[300px] m-3">Instructions</button>
