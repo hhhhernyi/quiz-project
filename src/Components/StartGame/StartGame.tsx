@@ -14,6 +14,7 @@ const StartGame = () => {
     const correctAnswer = answers.find((answer) => answer[1] === 'correctAnswer');
     if (correctAnswer && correctAnswer[0] === selectedAnswer) {
       console.log('Correct Answer!');
+      setQuestionNumber(questionNumber=>questionNumber+1)
     } else {
       console.log('Wrong Answer!');
     }
