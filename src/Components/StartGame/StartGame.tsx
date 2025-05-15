@@ -6,7 +6,7 @@ const StartGame = () => {
   const [questionNumber, setQuestionNumber] = useState<number>(1);
   const [questionIndex, setQuestionIndex] = useState<number>(0)
   const [answers, setAnswers] = useState<string[][] | []>([]);
-  const [loading, setLoading] = useState<boolean>(true);
+  //const [loading, setLoading] = useState<boolean>(true);
   // const [countdown, setCountdown] = useState<number>(3);
 
   // constants
